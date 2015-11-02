@@ -1,0 +1,106 @@
+Xft.lcdfilter: lcddefault
+!Xft.dpi:        80
+!Xft.dpi:        96
+!Xft.dpi:        88
+Xft.dpi:        72
+!Xft.dpi:        108
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+Xft.autohint:   0
+
+UXTerm*rightScrollBar: True
+UXTerm*reverseVideo: True
+
+!UXTerm*cjk_width:  true
+!!UXTerm*wideFont: -efont-fixed-medium-r-normal--12-120-75-75-c-120-iso10646-1
+!UXTerm*Font: -fontforge-pc9800-medium-r-normal--16-150-75-75-c-160-jisx0208.1978-0 
+UXTerm*Font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+!UXTerm*VT100*faceName:  More Perfect DOS VGA:style=Regular:size=16:minspace=true
+!UXTerm*faceNameDoublesize:  Gen Shin Gothic Monospace Regular:style=Regular:minspace=true
+!UXTerm*faceNameDoublesize:  Gen Shin Gothic Monospace Regular:style=Regular:minspace=true
+!UXTerm*scaleHeight: 1.1
+
+
+
+
+UXTerm*Scrollbar.translations: #override\
+     <Btn2Down>:   StartScroll(Forward) \n\
+     <Btn1Down>:   StartScroll(Continuous) MoveThumb() NotifyThumb() \n\
+     <Btn3Down>:   StartScroll(Backward) \n\
+     <Btn1Motion>: MoveThumb() NotifyThumb() \n\
+     <BtnUp>:      NotifyScroll(Proportional) EndScroll()
+UXTerm*Scrollbar.thickness: 10
+
+UXTerm*on2Clicks: regex [^ ]+
+UXTerm*on3Clicks: regex [^\n]+
+UXTerm*on4Clicks: group
+UXTerm*on5Clicks: page
+
+!UXTerm*maxBufSize: 65535
+UXTerm*saveLines: 65535                                                                                   
+UXTerm*fastScroll: true 
+
+Xcursor.size: 48
+!UXTerm*borderWidth: 0
+
+! Forbid bold font faces; bold type is light blue.
+UXTerm*colorBDMode: true
+!UXTerm*colorBD: rgb:82/a4/d3
+UXTerm*colorBD: yellow
+!UXTerm*colorBD: red
+! Do not underscore text, underlined text is white.
+UXTerm*colorULMode: true
+!UXTerm*colorUL: rgb:e4/e4/e4
+UXTerm*colorUL: magenta
+!UXTerm*colorUL: green
+
+
+UXTerm*foreground: black
+UXTerm*background: green2
+
+! replece color2 (normal green), color15 (bold green) and color7 (normal white) and color15 (bold white)
+UXTerm*Color2: gray90
+UXTerm*Color7: green2
+UXTerm*Color10: white
+UXTerm*Color15: green
+
+UXTerm*VT100*translations: #override Shift <Btn1Up>: exec-formatted("google-chrome '%t'", PRIMARY)
+
+!UXTerm*forcePackedFont: false
+
+Emacs.reverseVideo: true
+
+Emacs*foreground: black
+Emacs*background: green2
+
+Emacs.FontBackend: x
+!!Emacs*font:  More Perfect DOS VGA:style=Regular:size=16:minspace=true
+!!!Emacs.Fontset-0: -shinonome-gothic-*-r-normal--12-*-*-*-*-*-fontset-shinonome12,\
+!!!ascii:-misc-fixed-*-r-semicondensed--13-120-75-75-c-60-iso8859-1,\
+!!!japanese-jisx0208:-shinonome-gothic-medium-r-normal-*-12-*-*-*-*-*-jisx0208.1990-0,\
+!!!katakana-jisx0201:-shinonome-gothic-medium-r-normal-*-12-*-*-*-*-*-jisx0208.1990-0
+!!!Emacs.font: fontset-shinonome12
+!Emacs*font: PC-9800-16
+!Emacs*font: PC-9800-13
+!Emacs*font: PC9800-13
+!Emacs*font: PC9800-16
+!Emacs*font: Fixed-14
+!Emacs*font: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+!Emacs*fontSetList: 0
+Emacs*font: fontset-14
+Emacs.Fontset-0: -misc-fixed-medium-r-normal--14-*-*-*-*-*-fontset-14, \
+japanese-jisx0208: -misc-fixed-medium-r-normal-*-14-*-*-*-*-*-jisx0208.*-*
+!xload*reverseVideo: on
+xload*foreground: white
+xload*background: blue
+xload*update: 1
+
+!xclock*foreground: white
+xclock*background: LightPink
+
+!xosview*cpuFormat: single
+xosview*battery: false
+
